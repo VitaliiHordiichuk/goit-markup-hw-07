@@ -1,0 +1,148 @@
+.footer {
+    background-color: $footer-bgr-color;
+    padding: 60px 0;
+}
+
+.footer__conteiner {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer__adress {
+    margin-right: 70px;
+}
+
+
+.address-list__main {
+    color: $white-text-color;
+}
+.address-list__item {
+    margin-bottom: 9px;
+
+    &:last-child{
+        margin-bottom: 0px;
+    }
+}
+
+
+
+.address-list__contact {
+    color: $address-color;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover, &:focus{
+        color: $accent-color;
+    }
+}
+
+
+
+.address {
+    font-style: normal;
+    line-height: 1.71;
+}
+
+.network-footer--location {
+    margin-top: 12px;
+}
+
+.network {
+    display: flex;
+    justify-content: center;
+}
+
+.network__site {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+
+
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover, &:focus{
+background-color: $accent-color;
+    }
+}
+
+.network-icon {
+    fill: $white-text-color;
+}
+
+.network__item {
+    margin-right: 10px;
+
+    &:last-child{
+        margin-right: 0px;
+    }
+}
+
+
+
+.invite {
+    font-size: 14px;
+    line-height: 1.15;
+    color: $white-text-color;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.form-min {
+    display: block;
+
+
+    margin-left: 93px;
+}
+
+.form-min__subscription {
+    display: flex;
+}
+
+.form-min__title {
+    font-weight: 700;
+    line-height: 1.14;
+
+    color: $white-text-color;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.form-min__mail {
+    width: 358px;
+    height: 50px;
+    padding: 0px 16px;
+    font-size: 16px;
+    line-height: 1.25;
+    color: $white-text-color;
+    background-color: inherit;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    ;
+    margin-right: 12px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus, &:hover{
+border: 1px solid $accent-color;
+    outline: transparent;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    &::placeholder{
+        font-size: 16px;
+            line-height: 1.25;
+            color: rgba(255, 255, 255, 0.6);
+    }
+}
+
+
+
+
+
+
