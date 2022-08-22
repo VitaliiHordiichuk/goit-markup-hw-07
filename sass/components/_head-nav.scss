@@ -46,7 +46,6 @@
 
 .menu-button{
     position: absolute;
-    // z-index: 3;
     top: 10px;
     right: 15px;
     cursor: pointer;
@@ -60,19 +59,19 @@ display: inline-flex;
 }
 }
 
-.mb-menu__menu{
+.menu-button__menu{
     display: block;
 
 }
-.menu-button.is-open .mb-menu__menu{
+.menu-button.is-open .menu-button__menu{
     display: none;
 }
 
-.mb-menu__close{
+.menu-button__close{
 display: none;
 
 }
-.menu-button.is-open .mb-menu__close{
+.menu-button.is-open .menu-button__close{
     display: block;
 }
 
