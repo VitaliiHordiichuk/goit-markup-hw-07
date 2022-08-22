@@ -3,7 +3,8 @@
    <head>
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=, initial-scale=1.0" />
+      <!-- <meta name="viewport" content="width=, initial-scale=1.0" /> -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Студия</title>
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,44 +23,66 @@
    <body class="page">
       <!--шапка сайта-->
       <header class="header">
-         <div class="conteiner header__conteiner">
-            <nav class="nave">
-               <a href="./index.html" class="logo">Web<span class="logo__head">Studio</span></a>
-               <ul class="nave-site list">
-                  <li class="nave-site__item">
-                     <a href="./index.html" class="nave-site__link current">Студія</a>
-                  </li>
-                  <li class="nave-site__item">
-                     <a href="./portfolio.html" class="nave-site__link">Портфоліо</a>
-                  </li>
-                  <li class="nave-site__item">
-                     <a href="" class="nave-site__link">Контакти</a>
-                  </li>
-               </ul>
-            </nav>
-
-            <ul class="contacts-header list">
-               <li class="contacts-header__item">
-                  <a href="mailto:info@devstudio.com" class="contacts-header__contact"
-                     ><span class="contacts-header__icon">
-                        <svg width="16px" height="12px">
-                           <use href="./images/symbol-defs.svg#letter"></use>
-                        </svg>
-                     </span>
-                     info@devstudio.com</a
-                  >
-               </li>
-               <li class="contacts-header__item">
-                  <a href=":+380961111111" class="contacts-header__contact">
-                     <span class="contacts-header__icon">
-                        <svg width="10px" height="16px">
-                           <use href="./images/symbol-defs.svg#smartphone"></use>
-                        </svg> </span
-                     >+38 096 111 11 11</a
-                  >
-               </li>
-            </ul>
+         <div  class="conteiner header__conteiner">
+            <a href="./index.html" class="logo">Web<span class="logo__head">Studio</span></a>
+                       <div class="header__nave">
+                        <nav class="nave">
+                           <ul class="nave-site list">
+                              <li class="nave-site__item">
+                                 <a href="./index.html" class="nave-site__link current">Студія</a>
+                              </li>
+                              <li class="nave-site__item">
+                                 <a href="./portfolio.html" class="nave-site__link">Портфоліо</a>
+                              </li>
+                              <li class="nave-site__item">
+                                 <a href="" class="nave-site__link">Контакти</a>
+                              </li>
+                           </ul>
+                        </nav>
+                        <ul class="contacts-header list">
+                           <li class="contacts-header__item">
+                              <a href="mailto:info@devstudio.com" class="contacts-header__contact">
+                                 <span class="contacts-header__icon">
+                                    <svg width="16px" height="12px">
+                                       <use href="./images/symbol-defs.svg#letter"></use>
+                                    </svg>
+                                 </span>
+                                 info@devstudio.com
+                              </a>
+                           </li>
+                           <li class="contacts-header__item">
+                              <a href=":+380961111111" class="contacts-header__contact">
+                                 <span class="contacts-header__icon">
+                                    <svg width="10px" height="16px">
+                                       <use href="./images/symbol-defs.svg#smartphone"></use>
+                                    </svg>
+                                    </span>+38 096 111 11 11</a>
+                                 </li>
+                         </ul>
+                        
+                        <ul class="header-network list">
+                          <li class="header-network__item"><a href="" class="header-network__site">Instagram</a></li>
+                          <li class="header-network__item"><a href="" class="header-network__site">Twitter</a></li>
+                          <li class="header-network__item"><a href="" class="header-network__site">Facebook</a></li>
+                          <li class="header-network__item"><a href="" class="header-network__site">LinkedIn</a></li>
+                        </ul>
+                       </div>
+                       <button type="button " class="menu-button data-menu-button is-open">
+                           <svg width="40px" height="40px">
+                              <use href="./images/symbol-defs.svg#icon-menu_40px" class="mb-menu__menu">
+                              </use>
+                              <use href="./images/symbol-defs.svg#icon-close_40px" class="mb-menu__close">
+                              </use>
+                           </svg>
+                        </button>
+                       
          </div>
+          
+         
+                       
+            
+              
+
       </header>
       <!--основной контент-->
       <main>
@@ -158,7 +181,41 @@
                <h2 class="section__title">Наша команда</h2>
                <ul class="team list">
                   <li class="team__item">
-                     <img class="team-foto" src="./images/team-1.jpg" alt="Ігор Демьяненко" />
+                     <picture>
+<source
+                     media="(min-width: 1200px)"
+                     srcset="
+                     ./images/team/team-1-desk1@x.jpg 1x,
+                     ./images/team/team-1-desk2@x.jpg 2x
+                     "
+                     type="image/jpg"
+                     >
+                       <source
+                     media="(min-width: 768px)"
+                     srcset="
+                     ./images/team/team-1-tab1@x.jpg 1x,
+                     ./images/team/team-1-tab2@x.jpg 2x
+                     "
+                     type="image/jpg"
+                     >
+                       <source
+                     media="(min-width: 480px)"
+                     srcset="
+                     ./images/team/team-1-mob1@x.jpg 1x,
+                     ./images/team/team-1-mob2@x.jpg 2x
+                     "
+                     type="image/jpg"
+                     >
+
+
+                     <img class="team-foto"
+                     
+                    
+                     src="./images/team/team-1-mob1@x.jpg" alt="Член команди" width="450px"  height="460"
+                     loading="lazy"
+                     >
+                     </picture>
+                     
                      <div class="team__person">
                         <h3 class="team__name">Ігор Демьяненко</h3>
                         <p class="team__function">Product Designer</p>
@@ -207,11 +264,44 @@
                      </div>
                   </li>
                   <li class="team__item">
-                     <img class="team-foto" src="./images/team-2.jpg" alt="Ольга Репіна" />
+                      <picture>
+<source
+                     media="(min-width: 1200px)"
+                     srcset="
+                     ./images/team/team-2-desk1@x.jpg 1x,
+                     ./images/team/team-2-desk2@x.jpg 2x
+                     "
+                     type="image/jpg"
+                     >
+                       <source
+                     media="(min-width: 768px)"
+                     srcset="
+                     ./images/team/team-2-tab1@x.jpg 1x,
+                     ./images/team/team-2-tab2@x.jpg 2x
+                     "
+                     type="image/jpg"
+                     >
+                       <source
+                     media="(min-width: 480px)"
+                     srcset="
+                     ./images/team/team-2-mob1@x.jpg 1x,
+                     ./images/team/team-2-mob2@x.jpg 2x
+                     "
+                     type="image/jpg"
+                     >
+
+
+                     <img class="team-foto"
+                     
+                    
+                     src="./images/team/team-2-mob1@x.jpg" alt="Член команди" width="450px"  height="460"
+                     loading="lazy"
+                     >
+                     </picture>
                      <div class="team__person">
                         <h3 class="team__name">Ольга Репіна</h3>
                         <p class="team__function">Frontend Developer</p>
-                        <ul class="network network-location list">
+                        <ul class="network network--location list">
                            <li class="taem-contacts__item">
                               <a href="" class="taem-contacts__link">
                                  <svg class="network" width="20px" height="20px">
@@ -256,11 +346,44 @@
                      </div>
                   </li>
                   <li class="team__item">
-                     <img class="team-foto" src="./images/team-3.jpg" alt="Миколай Тарасов" />
+                     <picture>
+<source
+                     media="(min-width: 1200px)"
+                     srcset="
+                     ./images/team/team-3-desk1@x.jpg 1x,
+                     ./images/team/team-3-desk2@x.jpg 2x
+                     "
+                     type="image/jpg"
+                     >
+                       <source
+                     media="(min-width: 768px)"
+                     srcset="
+                     ./images/team/team-3-tab1@x.jpg 1x,
+                     ./images/team/team-3-tab2@x.jpg 2x
+                     "
+                     type="image/jpg"
+                     >
+                       <source
+                     media="(min-width: 480px)"
+                     srcset="
+                     ./images/team/team-3-mob1@x.jpg 1x,
+                     ./images/team/team-3-mob2@x.jpg 2x
+                     "
+                     type="image/jpg"
+                     >
+
+
+                     <img class="team-foto"
+                     
+                    
+                     src="./images/team/team-3-mob1@x.jpg" alt="Член команди" width="450px"  height="460"
+                     loading="lazy"
+                     >
+                     </picture>
                      <div class="team__person">
                         <h3 class="team__name">Миколай Тарасов</h3>
                         <p class="team__function">Marketing</p>
-                        <ul class="network network-location list">
+                        <ul class="network network--location list">
                            <li class="taem-contacts__item">
                               <a href="" class="taem-contacts__link">
                                  <svg class="network" width="20px" height="20px">
@@ -305,11 +428,44 @@
                      </div>
                   </li>
                   <li class="team__item">
-                     <img class="team-foto" src="./images/team-4.jpg" alt="Михайло Єрмаков" />
+                     <picture>
+<source
+                     media="(min-width: 1200px)"
+                     srcset="
+                     ./images/team/team-4-desk1@x.jpg 1x,
+                     ./images/team/team-4-desk2@x.jpg 2x
+                     "
+                     type="image/jpg"
+                     >
+                       <source
+                     media="(min-width: 768px)"
+                     srcset="
+                     ./images/team/team-4-tab1@x.jpg 1x,
+                     ./images/team/team-4-tab2@x.jpg 2x
+                     "
+                     type="image/jpg"
+                     >
+                       <source
+                     media="(min-width: 480px)"
+                     srcset="
+                     ./images/team/team-4-mob1@x.jpg 1x,
+                     ./images/team/team-4-mob2@x.jpg 2x
+                     "
+                     type="image/jpg"
+                     >
+
+
+                     <img class="team-foto"
+                     
+                    
+                     src="./images/team/team-4-mob1@x.jpg" alt="Член команди" width="450px"  height="460"
+                     loading="lazy"
+                     >
+                     </picture>
                      <div class="team__person">
                         <h3 class="team__name">Михайло Єрмаков</h3>
                         <p class="team__function">UI Designer</p>
-                        <ul class="network network-location list">
+                        <ul class="network network--location list">
                            <li class="taem-contacts__item">
                               <a href="" class="taem-contacts__link">
                                  <svg class="network" width="20px" height="20px">
@@ -410,12 +566,13 @@
       <!--футер-->
       <footer class="footer">
          <div class="conteiner footer__conteiner">
-            <div class="footer__adress">
+            <div class="footer__info">
+               <div class="footer__adress">
                <a href="./index.html" class="logo futter__logo--location"
                   >Web<span class="logo__footer">Studio</span></a
                >
                <address class="address">
-                  <ul class="address-list list">
+                  <ul class="address__list list">
                      <li class="address-list__item">
                         <a href="" class="address-list__main">г. Київ, пр-т Лесі Українки, 26</a>
                      </li>
@@ -464,6 +621,7 @@
                      </a>
                   </li>
                </ul>
+            </div>
             </div>
             <form class="form-min">
                <legend class="form-min__title">Підпишіться на розсилку</legend>
@@ -572,7 +730,7 @@
                         <svg width="16px" height="15px" class="accord__check">
                            <use href="./images/symbol-defs.svg#icon-icon-check" class="accord__icon"></use>
                         </svg>
-                        <span>Погоджуюся з розсилкою та приймаю</span>
+                        <span class="">Погоджуюся з розсилкою та приймаю</span>
                         <a href="" class="accord__link"> Умови договору</a></label
                      ></p
                   >
