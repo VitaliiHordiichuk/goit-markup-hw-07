@@ -25,7 +25,7 @@
       <header class="header">
          <div  class="conteiner header__conteiner">
             <a href="./index.html" class="logo">Web<span class="logo__head">Studio</span></a>
-                       <div class="header__nave data-menu">
+                       <div class="header__nave" data-menu>
                         <nav class="nave">
                            <ul class="nave-site list">
                               <li class="nave-site__item">
@@ -42,8 +42,8 @@
                         <ul class="contacts-header list">
                            <li class="contacts-header__item">
                               <a href="mailto:info@devstudio.com" class="contacts-header__contact">
-                                 <span class="contacts-header__icon">
-                                    <svg width="16px" height="12px">
+                                 <span class="contacts-header__icon contacts-header__icon--letter">
+                                    <svg width="14px" height="10px">
                                        <use href="./images/symbol-defs.svg#letter"></use>
                                     </svg>
                                  </span>
@@ -52,8 +52,8 @@
                            </li>
                            <li class="contacts-header__item">
                               <a href=":+380961111111" class="contacts-header__contact">
-                                 <span class="contacts-header__icon">
-                                    <svg width="10px" height="16px">
+                                 <span class="contacts-header__icon  contacts-header__icon--telephone">
+                                    <svg width="10px" height="14px">
                                        <use href="./images/symbol-defs.svg#smartphone"></use>
                                     </svg>
                                     </span>+38 096 111 11 11</a>
@@ -67,7 +67,7 @@
                           <li class="header-network__item"><a href="" class="header-network__site">LinkedIn</a></li>
                         </ul>
                        </div>
-                       <button type="button " class="menu-button data-menu-button is-open">
+                       <button type="button " class="menu-button" data-menu-button>
                            <svg width="40px" height="40px">
                               <use href="./images/symbol-defs.svg#icon-menu_40px" class="menu-button__menu">
                               </use>
@@ -154,20 +154,66 @@
                <h2 class="section__title">Чим ми займаємося</h2>
                <ul class="work list">
                   <li class="work__item">
-                     <img src="./images/box_1.jpg" alt="створення сайта" width="370" />
+                      <picture>
+                        <source
+                     media="(min-width: 1200px)"
+                     srcset="
+                     ./images/work/work-1@1x.jpg 1x,
+                     ./images/work/work-2@1x.jpg 2x
+                     "
+                     type="image/jpg"
+                     >
+                     <img class="team-foto"
+                     
+                    
+                     src="./images/work/work-1@1x.jpg" alt="розробляєм сайт" width="370px"  height="294"
+                     loading="lazy"
+                     >
+                      </picture>
+
 
                      <div class="work__development">
                         <h3 class="work__title">Дескоптні додатки</h3>
                      </div>
                   </li>
                   <li class="work__item">
-                     <img src="./images/box_2.jpg" alt="розробка мобільного додатку" width="370" />
+                     <picture>
+                        <source
+                     media="(min-width: 1200px)"
+                     srcset="
+                     ./images/work/work-2@1x.jpg 1x,
+                     ./images/work/work-2@2x.jpg 2x
+                     "
+                     type="image/jpg"
+                     >
+                     <img class="team-foto"
+                     
+                    
+                     src="./images/work/work-2@1x.jpg" alt="розробляєм мобільний додаток" width="370px"  height="294"
+                     loading="lazy"
+                     >
+                      </picture>
                      <div class="work__development">
                         <h3 class="work__title">Мобільні додатки</h3>
                      </div>
                   </li>
                   <li class="work__item">
-                     <img src="./images/box_3.jpg" alt="дизайн" width="370" />
+                     <picture>
+                        <source
+                     media="(min-width: 1200px)"
+                     srcset="
+                     ./images/work/work-3@1x.jpg 1x,
+                     ./images/work/work-3@2x.jpg 2x
+                     "
+                     type="image/jpg"
+                     >
+                     <img class="team-foto"
+                     
+                    
+                     src="./images/work/work-3@1x.jpg" alt="дизайн" width="370px"  height="294"
+                     loading="lazy"
+                     >
+                      </picture>
                      <div class="work__development">
                         <h3 class="work__title">Дизайнерські</h3>
                      </div>
@@ -742,5 +788,6 @@
       </div>
 
       <script src="./js/modal.js"></script>
+      <script src="./js/menu.js"></script>
    </body>
 </html>

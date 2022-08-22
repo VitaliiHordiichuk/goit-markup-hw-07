@@ -26,7 +26,7 @@
                     <a href="./index.html" class="logo"
                          >Web<span class="logo__head">Studio</span></a
                     >
-                    <div class="header__nave">
+                    <div class="header__nave" data-menu>
                          <nav class="nave">
                               <ul class="nave-site list">
                                    <li class="nave-site__item">
@@ -48,7 +48,9 @@
                                         href="mailto:info@devstudio.com"
                                         class="contacts-header__contact"
                                    >
-                                        <span class="contacts-header__icon">
+                                        <span
+                                             class="contacts-header__icon contacts-header__icon--letter"
+                                        >
                                              <svg width="16px" height="12px">
                                                   <use href="./images/symbol-defs.svg#letter"></use>
                                              </svg>
@@ -58,7 +60,9 @@
                               </li>
                               <li class="contacts-header__item">
                                    <a href=":+380961111111" class="contacts-header__contact">
-                                        <span class="contacts-header__icon">
+                                        <span
+                                             class="contacts-header__icon contacts-header__icon--letter"
+                                        >
                                              <svg width="10px" height="16px">
                                                   <use
                                                        href="./images/symbol-defs.svg#smartphone"
@@ -84,15 +88,15 @@
                               >
                          </ul>
                     </div>
-                    <button type="button " class="menu-button data-menu-button is-open">
+                    <button type="button " class="menu-button" data-menu-button>
                          <svg width="40px" height="40px">
                               <use
                                    href="./images/symbol-defs.svg#icon-menu_40px"
-                                   class="mb-menu__menu"
+                                   class="menu-button__menu"
                               ></use>
                               <use
                                    href="./images/symbol-defs.svg#icon-close_40px"
-                                   class="mb-menu__close"
+                                   class="menu-button__close"
                               ></use>
                          </svg>
                     </button>
@@ -692,5 +696,6 @@
                     </form>
                </div>
           </footer>
+          <script src="./js/menu.js"></script>
      </body>
 </html>
